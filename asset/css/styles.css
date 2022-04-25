@@ -12,55 +12,78 @@
 /* Neutral */
 --white:hsl(0, 0%, 100%);
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body {
-    background: hsl(218, 28%, 13%);
+    margin: 0;
+    padding:0;
+    background:var(--dark-blue-2);
     color: #fff;
     Font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
 }
-header .logo{
-    padding: 40px 25px;
-    float: left;;
+
+/* nav styling */
+nav{
+    padding:20px 40px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-header a {
-    padding: 40px 25px;
-    float: right;
+.navlinks{
+    display: flex;
+    align-items: center;
+    gap:1rem;
 }
-header a{
-    color: hsl(0, 6%, 90%);
+.navlinks > li{
+    list-style-type: none;
+}
+.navlinks > li > a{
     text-decoration: none;
-    margin: 15px;
+    color:var(--white);
+    font-weight:400;
+    font-size: 14px;
 }
-.card-only{
-    margin:auto;
-    width: 50%;
-    padding: 40px 0;
+
+/* header styling */
+header{
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header > .image{
+    margin-top: 40px;
+}
+header > .image > img{
+    width:450px;
+    height:450px;
+}
+header h4{
+    font-size:32px;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
+    font-weight:700;
 }
-.card-only img{
-    height: 25rem;
-    object-fit: contain;
+header p{
+    font-size:14px;
+    text-align: center;
+    font-weight:400;
 }
-.first-p{
-    font-size: 2rem;
-    font-weight: bold;
-}
-.second-p{
-    font-size: 1.5rem;
-    font-weight: 100;
-    padding: 0 20px;
-    margin: 30px;
-    color: rgb(209, 203, 203);
-}
-button{
-    background-color: hsl(176, 68%, 64%);
+header button{
+    padding:10px 30px;
+    font-size:14px;
+    font-weight:400;
+    background-color: var(--Blue);
     border: none;
-    color: hsl(0, 0%, 100%);
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    width: 180px;
-    border-radius: 20px;
+    border-radius:20px;
+    color:var(--white);
 }
 .card-container{
     display: flex;
