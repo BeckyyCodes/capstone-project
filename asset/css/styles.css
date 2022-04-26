@@ -1,0 +1,150 @@
+/* Set color scheme */
+:root{
+/* Primary */
+--dark-blue-1:hsl(217, 28%, 15%);
+--dark-blue-2:hsl(218, 28%, 13%);
+--dark-blue-3:hsl(216, 53%, 9%);
+--dark-blue-4:hsl(219, 30%, 18%);
+/* Accent */
+--Cyan:hsl(176, 68%, 64%);
+--Blue:hsl(198, 60%, 50%);
+--Light-Red:hsl(0, 100%, 63%);
+/* Neutral */
+--white:hsl(0, 0%, 100%);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding:0;
+    background:var(--dark-blue-2);
+    color: #fff;
+    Font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+/* nav styling */
+nav{
+    padding:20px 40px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.navlinks > li{
+    list-style-type: none;
+}
+.navlinks > li > a{
+    text-decoration: none;
+    color:var(--white);
+    font-weight:400;
+    font-size: 14px;
+}
+
+/* header styling */
+header{
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header > .image{
+    margin-top: 40px;
+}
+header > .image > img{
+    width:450px;
+    height:450px;
+}
+header h4{
+    font-size:32px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight:700;
+}
+header p{
+    font-size:14px;
+    text-align: center;
+    font-weight:400;
+}
+header button{
+    padding:10px 30px;
+    font-size:14px;
+    font-weight:400;
+    background-color: var(--Blue);
+    border: none;
+    border-radius:20px;
+    color:var(--white);
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    row-gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-content: space-between;
+}
+.card-content{
+    width: 50%;
+    justify-content: center;
+}
+.logo1{
+    align-items: center;
+}
+.p-tag{
+    width: auto;
+}
+.para{
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+.section1{
+    margin: 30px;
+    margin-left:  50px;
+}
+.section2{
+   margin-top: 200px;
+}
+.section2 span{
+    color: hsl(176, 68%, 64%);
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.blog1{
+    background-color: hsl(219, 30%, 18%);
+}
+.user{
+    display: flex;
+    margin-top: auto;
+}
+.user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.user-info h5{
+    margin: 0;
+}
+.user-info span{
+    color: rgb(209, 203, 203);
+}
